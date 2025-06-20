@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. This will automatically switch between light/dark and is NoActionBar. -->
+    <style name="Theme.TicTacToe" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+
+        <!-- Custom attributes for dynamic theming - Light Mode Defaults -->
+        <item name="backgroundColor">@color/light_background</item>
+        <item name="textColor">@color/light_text</item>
+        <item name="buttonBackgroundColor">@color/light_button_background</item>
+        <item name="buttonTextColor">@color/light_button_text</item>
+        <item name="boardBackgroundColor">@color/light_board_background</item>
+        <item name="boardCellBackgroundColor">@color/light_board_cell_background</item>
+        <item name="boardLineColor">@color/light_board_line_color</item>
+
+        <!-- Set window background to our new drawable that references backgroundColor -->
+        <item name="android:windowBackground">@drawable/app_window_background</item>
+        <!-- Retain android:colorBackground for general background purposes if MaterialComponents uses it -->
+        <item name="android:colorBackground">?attr/backgroundColor</item>
+    </style>
+
+    <!-- Explicit Light Theme if needed, inheriting from the main Theme.TicTacToe -->
+    <style name="Theme.TicTacToe.Light" parent="Theme.TicTacToe">
+        <!-- These items are already defined in Theme.TicTacToe, but you can override if specific light mode variations are needed -->
+        <item name="backgroundColor">@color/light_background</item>
+        <item name="textColor">@color/light_text</item>
+        <item name="buttonBackgroundColor">@color/light_button_background</item>
+        <item name="buttonTextColor">@color/light_button_text</item>
+        <item name="boardBackgroundColor">@color/light_board_background</item>
+        <item name="boardCellBackgroundColor">@color/light_board_cell_background</item>
+        <item name="boardLineColor">@color/light_board_line_color</item>
+    </style>
+
+    <!-- AppBarOverlay and PopupOverlay (keep as is if they work) -->
+    <style name="Theme.TicTacToe.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.TicTacToe.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Preference theme for SettingsActivity -->
+    <style name="PreferenceTheme" parent="Theme.MaterialComponents.DayNight">
+        <!-- Removed explicit textColorPrimary and textColorSecondary to avoid inflation issues -->
+        <item name="android:background">?attr/backgroundColor</item>
+        <item name="backgroundColor">?attr/backgroundColor</item>
+        <item name="textColor">?attr/textColor</item>
+        <!-- Set window background for PreferenceTheme too -->
+        <item name="android:windowBackground">@drawable/app_window_background</item>
+    </style>
+
+    <!-- Define the style for your game board buttons. -->
+    <style name="GameBoardButton" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_rowWeight">1</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:textSize">60sp</item>
+        <item name="android:textColor">?attr/buttonTextColor</item>
+        <item name="backgroundTint">?attr/boardCellBackgroundColor</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- Define the style for your main action buttons (New Game, Undo, Reset Scores) -->
+    <style name="GameActionButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">?attr/buttonTextColor</item>
+        <item name="backgroundTint">?attr/buttonBackgroundColor</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+    </style>
+
+</resources>

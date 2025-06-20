@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/general_settings">
+
+        <ListPreference
+            android:key="ai_difficulty"
+            android:title="@string/ai_difficulty"
+            android:defaultValue="Medium"
+            android:entries="@array/ai_difficulty_entries"
+            android:entryValues="@array/ai_difficulty_values" />
+
+        <SwitchPreferenceCompat
+            android:key="sound_enabled"
+            android:title="@string/enable_sound"
+            android:defaultValue="true" />
+
+        <!-- REMOVED: Dark theme switch preference -->
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

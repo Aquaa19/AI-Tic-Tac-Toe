@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Tic Tac Toe AI</string>
+    <string name="current_turn">Current Turn: %1$s</string>
+    <string name="current_turn_user">Current Turn: User (%1$s)</string>
+    <string name="current_turn_ai">Current Turn: AI (%1$s)</string>
+    <string name="scores">Wins: %1$d, AI Wins: %2$d, Draws: %3$d</string>
+    <string name="game_not_started">Game Not Started</string>
+    <string name="game_in_progress">Game In Progress</string>
+    <string name="winner_found">Winner: %1$s</string>
+    <string name="winner_found_user">User (%1$s) Wins!</string>
+    <string name="winner_found_ai">AI (%1$s) Wins!</string>
+    <string name="game_tie">It\'s a Tie!</string>
+    <string name="new_game">NEW GAME</string>
+    <string name="undo">UNDO</string>
+    <string name="reset_scores">RESET SCORES</string>
+    <string name="play_ai_game">PLAY AI GAME</string>
+    <string name="settings">SETTINGS</string>
+    <string name="ai_difficulty">AI Difficulty</string>
+    <string name="enable_sound">Enable Sound</string>
+    <string name="general">General</string>
+    <string name="general_settings">General Settings</string> <!-- Added this string -->
+
+    <!-- New content descriptions for Tic Tac Toe cells -->
+    <string name="tic_tac_toe_cell_00">Tic Tac Toe cell at row 0, column 0</string>
+    <string name="tic_tac_toe_cell_01">Tic Tac Toe cell at row 0, column 1</string>
+    <string name="tic_tac_toe_cell_02">Tic Tac Toe cell at row 0, column 2</string>
+    <string name="tic_tac_toe_cell_10">Tic Tac Toe cell at row 1, column 0</string>
+    <string name="tic_tac_toe_cell_11">Tic Tac Toe cell at row 1, column 1</string>
+    <string name="tic_tac_toe_cell_12">Tic Tac Toe cell at row 1, column 2</string>
+    <string name="tic_tac_toe_cell_20">Tic Tac Toe cell at row 2, column 0</string>
+    <string name="tic_tac_toe_cell_21">Tic Tac Toe cell at row 2, column 1</string>
+    <string name="tic_tac_toe_cell_22">Tic Tac Toe cell at row 2, column 2</string>
+</resources>
